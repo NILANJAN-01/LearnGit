@@ -1,0 +1,66 @@
+🔧 Essential & Advanced Git Commands
+🟢 Basic Commands (Beginner Friendly)
+git clone [url] – Clone a remote repository to your local machine.
+→ git clone https://github.com/user/repo.git
+
+git status – Show the working directory and staging area status.
+
+git add [file or .] – Stage changes for commit.
+→ git add .
+
+git commit -m "message" – Commit staged changes with a message.
+
+git push [remote] [branch] – Push local commits to the remote repo.
+→ git push origin main
+
+git pull [remote] [branch] – Fetch and merge changes from a remote branch.
+→ git pull origin main
+
+git log – View commit history.
+→ git log --oneline --graph
+
+git diff – Show file changes not yet staged or committed.
+
+🟡 Intermediate Commands
+git branch – List, create, or delete branches.
+→ git branch new-feature
+
+git checkout [branch] – Switch to another branch.
+→ git checkout develop
+
+git merge [branch] – Merge another branch into the current one.
+
+git stash – Temporarily store uncommitted changes.
+→ git stash save "WIP: refactor"
+→ git stash pop (reapply the last stash)
+
+git tag – Create tags for versions/releases.
+→ git tag v1.0.0
+→ git push origin v1.0.0
+
+git rm [file] – Remove files from the working directory and stage the removal.
+
+git reset [file] – Unstage a file while keeping its changes.
+→ git reset HEAD file.txt
+
+🔴 Advanced Commands
+git rebase [branch] – Reapply commits from your branch onto another (linear history).
+→ git checkout feature
+→ git rebase main
+
+git cherry-pick [commit] – Apply a specific commit from another branch.
+→ git cherry-pick a1b2c3d
+
+git revert [commit] – Create a new commit that undoes a previous commit.
+→ git revert a1b2c3d
+
+git reflog – Show a log of all branch updates (useful for recovery).
+
+git clean -fd – Remove untracked files and directories.
+
+git reset --hard [commit] – Reset to a specific commit and erase all uncommitted work (⚠️ destructive).
+→ git reset --hard HEAD~1
+
+git bisect – Find the commit that introduced a bug using binary search.
+
+git remote -v – View connected remote repositories.
